@@ -6,7 +6,10 @@
 
         <meta charset="utf-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        >
 
         <meta
             name="description"
@@ -21,67 +24,94 @@
 
     <body>
 
-        <a href="#konten-utama">Lewati ke konten utama</a>
+        <a class="skip-link" href="#konten-utama">
+            Lewati ke konten utama
+        </a>
 
-        <header>
+        <header class="site-header">
 
-            <p><strong>SisaBaik</strong></p>
+            <div class="container header-layout">
 
-            <nav aria-label="Navigasi utama">
+                <p class="brand">
+                    SisaBaik
+                </p>
 
-                <ul>
+                <nav aria-label="Navigasi utama">
 
-                    <li>
-                        <a href="index.html">
-                            Beranda
-                        </a>
-                    </li>
+                    <ul class="nav-list">
 
-                    <li>
-                        <a href="daftar-penyedia.html" aria-current="page">
-                            Daftar sebagai penyedia
-                        </a>
-                    </li>
+                        <li>
+                            <a href="index.html">
+                                Beranda
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="tawarkan-makanan.html">
-                            Tawarkan makanan
-                        </a>
-                    </li>
+                        <li>
+                            <a
+                                href="daftar-penyedia.html"
+                                aria-current="page"
+                            >
+                                Daftar sebagai penyedia
+                            </a>
+                        </li>
 
-                </ul>
+                        <li>
+                            <a href="tawarkan-makanan.html">
+                                Tawarkan makanan
+                            </a>
+                        </li>
 
-            </nav>
+                    </ul>
+
+                </nav>
+
+            </div>
 
         </header>
 
-        <main id="konten-utama" tabindex="-1">
+        <main
+            class="container"
+            id="konten-utama"
+            tabindex="-1"
+        >
 
-            <h1>Daftar sebagai penyedia SisaBaik</h1>
+            <div class="page-heading">
 
-            <p>
-                Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke
-                server dan basis data.
-            </p>
+                <h1>
+                    Daftar sebagai penyedia SisaBaik
+                </h1>
 
-            <p id="petunjuk-wajib">
-                Kolom bertanda <strong>*</strong> wajib diisi.
-            </p>
+                <p class="lead">
+                    Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke
+                    server dan basis data.
+                </p>
+
+                <p
+                    class="required-note"
+                    id="petunjuk-wajib"
+                >
+                    Kolom bertanda <strong>*</strong> wajib diisi.
+                </p>
+
+            </div>
 
             <form
+                class="form-card"
                 action="daftar-penyedia.html"
                 method="get"
                 aria-describedby="petunjuk-wajib"
             >
 
-                <fieldset>
+                <fieldset class="form-section">
 
-                    <legend>Informasi usaha</legend>
+                    <legend>
+                        Informasi usaha
+                    </legend>
 
                     <p>
 
                         <label for="nama-usaha">
-                            Nama usaha <strong>*</strong>
+                            Nama usaha *
                         </label><br>
 
                         <input
@@ -99,7 +129,7 @@
                     <p>
 
                         <label for="jenis-usaha">
-                            Jenis usaha <strong>*</strong>
+                            Jenis usaha *
                         </label><br>
 
                         <select
@@ -162,14 +192,16 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="form-section">
 
-                    <legend>Penanggung jawab</legend>
+                    <legend>
+                        Penanggung jawab
+                    </legend>
 
                     <p>
 
                         <label for="nama-penanggung-jawab">
-                            Nama lengkap <strong>*</strong>
+                            Nama lengkap *
                         </label><br>
 
                         <input
@@ -187,7 +219,7 @@
                     <p>
 
                         <label for="email">
-                            Alamat email <strong>*</strong>
+                            Alamat email *
                         </label><br>
 
                         <input
@@ -209,7 +241,7 @@
                     <p>
 
                         <label for="telepon">
-                            Nomor telepon <strong>*</strong>
+                            Nomor telepon *
                         </label><br>
 
                         <input
@@ -231,14 +263,16 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="form-section">
 
-                    <legend>Lokasi usaha</legend>
+                    <legend>
+                        Lokasi usaha
+                    </legend>
 
                     <p>
 
                         <label for="alamat">
-                            Alamat lengkap <strong>*</strong>
+                            Alamat lengkap *
                         </label><br>
 
                         <textarea
@@ -256,7 +290,7 @@
                     <p>
 
                         <label for="kota">
-                            Kabupaten atau kota <strong>*</strong>
+                            Kabupaten atau kota *
                         </label><br>
 
                         <input
@@ -273,7 +307,7 @@
                     <p>
 
                         <label for="provinsi">
-                            Provinsi <strong>*</strong>
+                            Provinsi *
                         </label><br>
 
                         <input
@@ -290,7 +324,7 @@
                     <p>
 
                         <label for="kode-pos">
-                            Kode pos <strong>*</strong>
+                            Kode pos *
                         </label><br>
 
                         <input
@@ -312,9 +346,11 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="form-section">
 
-                    <legend>Persetujuan</legend>
+                    <legend>
+                        Persetujuan
+                    </legend>
 
                     <p>
 
@@ -328,20 +364,26 @@
 
                         <label for="persetujuan">
                             Saya menyatakan bahwa informasi latihan ini tidak menggunakan
-                            data pribadi atau data usaha yang sebenarnya.
+                            data pribadi atau data usaha yang sebenarnya. *
                         </label>
 
                     </p>
 
                 </fieldset>
 
-                <p>
+                <p class="form-actions">
 
-                    <button type="submit">
+                    <button
+                        class="button"
+                        type="submit"
+                    >
                         Kirim pendaftaran latihan
                     </button>
 
-                    <button type="reset">
+                    <button
+                        class="button button-secondary"
+                        type="reset"
+                    >
                         Kosongkan formulir
                     </button>
 
@@ -349,7 +391,10 @@
 
             </form>
 
-            <section aria-labelledby="catatan-prototipe">
+            <section
+                class="section"
+                aria-labelledby="catatan-prototipe"
+            >
 
                 <h2 id="catatan-prototipe">
                     Apa yang terjadi setelah tombol dikirim?
@@ -366,11 +411,15 @@
 
         </main>
 
-        <footer>
+        <footer class="site-footer">
 
-            <p>
-                &copy; 2026 SisaBaik - Proyek pembelajaran Pengembangan Web.
-            </p>
+            <div class="container footer-layout">
+
+                <p>
+                    &copy; 2026 SisaBaik - Proyek pembelajaran Pengembangan Web.
+                </p>
+
+            </div>
 
         </footer>
 
